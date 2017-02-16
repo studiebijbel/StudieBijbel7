@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2016-12-14T10:35:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="744d7b21-5659-4561-9b81-ff3de3d2b628">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Fonts" pdfFontName="GreekSB.ttf">
+		<conditionalStyle>
+			<style pdfFontName="SILEZRA_.TTF"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<style pdfFontName="SILHT___.TTF"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="articles_pk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(40)]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     articles.article_html AS articles_article_html,
+     articles.filename AS articles_filename,
+     articles.author AS articles_author
+FROM
+     articles
+WHERE
+     articles.pk = $P{articles_pk}]]>
+	</queryString>
+	<field name="articles_article_html" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="articles_filename" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="articles_author" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="14" uuid="d505d32f-226b-47a5-9220-9289820828ac"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{articles_filename}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="32" width="100" height="14" uuid="9ca4ca73-f86e-4faf-a71f-341de7e019d4"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{articles_author}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="16" width="555" height="14" isPrintWhenDetailOverflows="true" uuid="84f7fdb3-7215-40aa-b933-8b56e23be08d"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{articles_article_html}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="8" width="555" height="14" uuid="03846f8a-d622-4d12-943e-f5e820f696d8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["© 2016 Centrum voor Bijbelonderzoek, Postbus 139, 3940 AC Doorn, www.studiebijbel.nl"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/commentary_blocks",
+items:[
+{foreignColumnName:"pk",operator:0,primaryDataProviderID:"commentary_block_id",typeid:23,uuid:"D791AD21-DCFE-4E9F-BC9A-F8A8FF72AE3D"}
+],
+name:"footnotes_to_commentary_blocks",
+primaryDataSource:"db:/sb/footnotes",
+typeid:22,
+uuid:"8E5B3850-8EE0-4EA2-ADBF-91451753D34D"

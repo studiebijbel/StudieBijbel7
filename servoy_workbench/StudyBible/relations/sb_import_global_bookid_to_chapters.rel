@@ -1,0 +1,9 @@
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/sb/chapters",
+items:[
+{foreignColumnName:"book_id",primaryDataProviderID:"globals.sb_import_bookId",typeid:23,uuid:"8C872D95-B930-4184-90D3-E0A18D1ED8BD"}
+],
+name:"sb_import_global_bookid_to_chapters",
+primaryDataSource:"db:/sb/books",
+typeid:22,
+uuid:"5D4AB85A-A7F2-4274-BBF6-28A7421B7070"

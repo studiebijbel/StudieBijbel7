@@ -1,0 +1,15 @@
+encapsulation:60,
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"491C9709-62D1-452C-91A6-1801943F01FF"
+}
+],
+name:"WebService",
+navigatorID:"-1",
+showInMenu:true,
+styleName:"CvB",
+typeid:3,
+uuid:"D863AFB2-56FE-4EC5-B1DC-D42ADD2322CF"

@@ -1,0 +1,16 @@
+dataSource:"db:/sb/books",
+items:[
+{
+background:"#ffffff",
+height:480,
+partType:5,
+typeid:19,
+uuid:"CC9C91A8-C18C-4920-A2DB-AD37E6B6A268"
+}
+],
+name:"sb_import_books",
+navigatorID:"-1",
+paperPrintScale:100,
+size:"640,480",
+typeid:3,
+uuid:"62EFFAE0-6AA8-4215-9508-5BB51B5AA4AD"

@@ -1,0 +1,11 @@
+addEmptyValue:1,
+dataProviderID1:"name_first",
+dataProviderID2:"sb_contact_id",
+dataProviderID3:"name_last",
+dataSource:"db:/sb_data/sb_contact",
+name:"sb_contact",
+returnDataProviders:2,
+showDataProviders:5,
+typeid:34,
+uuid:"8BBE4917-409A-4E9C-958C-3CE1937C3B54",
+valueListType:1

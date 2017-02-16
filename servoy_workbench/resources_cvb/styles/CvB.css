@@ -1,0 +1,163 @@
+combobox
+{
+	font-family: Verdana;
+	font-size: 11pt;
+	font-weight: normal;
+	text-align: left; 
+	color: #000000;
+
+	background-color:#FFFFFF;
+	margin: 0px 4px 0px 2px;
+	vertical-align: top; 
+
+	border-style: solid;
+	border-width: 1px 0px 0px 1px;
+	border-color: #87888a #ffffff #ffffff #87888a;
+}
+
+.gray {
+	background-color: #999999;
+}
+
+form {
+	text-align: center;
+	font: 11pt "Verdana";
+	/*background-color: #BEE3F6;*/
+}
+
+form.cvb-login-form {
+	background-color: rgb(208, 230, 234);
+}
+
+form selected {
+	background-color: #D3DEE5;
+}
+form odd {
+	background-color: #F5F7F9;
+}
+
+form even {
+	background-color: #FFFFFF;
+}
+
+form.table
+{
+	background-color: #FFFFFF; 
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #AAAAAA;
+}
+
+form.tab
+{
+	background-color: #FFFFFF; 
+}
+
+field
+{
+	font-family: Verdana;
+	font-size: 11pt;
+	font-weight: normal;
+	text-align: left; 
+	color: #000000;
+
+	background-color:#FFFFFF;
+	margin: 0px 4px 0px 2px;
+	vertical-align: top; 
+
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #cccccc;
+
+}
+
+
+label.cvb-topbar {
+	border-bottom: 1px solid rgb(209, 209, 209) !important;
+	background-color: white;
+}
+
+label.cvb-toptext {
+	color: #3D3D3D !important;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+combobox.table, 
+label.table, 
+field.table
+{
+	font-family: "Trebuchet MS";
+	border-color: #AAAAAA;
+	border-width: 0px 0px 1px 0px;
+}
+
+field.readonly
+{
+	color: #808080;
+	background-color:#eeeeee; 
+}
+
+label
+{
+	font-family: "Trebuchet MS";
+	font-weight: normal;
+	font-size: 12pt;
+   	text-align: left;
+	/*color: #7e0750;*/
+	color: #000000;
+/*	vertical-align: center; */
+
+}
+
+label.bold {
+	font-weight: bold;
+}
+
+label.h2 {
+	font-size: 24pt;
+}
+label.h3 {
+	font-size: 18pt;
+}
+
+label.topbar {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+label.table {
+	border-color: #AAAAAA;
+	border-width: 0px 0px 1px 0px;
+}
+
+label.small
+{
+	font-size: 9pt;
+}
+
+button
+{
+	font-family: "Trebuchet MS";
+	font-weight: normal;
+	font-size: 11pt;
+   	text-align: center;
+	/*color: #7e0750;*/
+	color: #000000;
+	/*vertical-align: center;*/
+}
+
+button.table 
+{
+	background-color: #FFFFFF;
+	border-color: #aaaaaa;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+tabpanel.bordered,
+label.bordered,
+form.bordered {
+	background-color: white;
+	border: 1px solid rgb(209, 209, 209);
+}

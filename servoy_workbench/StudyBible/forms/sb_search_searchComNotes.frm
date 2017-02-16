@@ -1,0 +1,44 @@
+borderType:"EmptyBorder,0,0,0,0",
+dataSource:"db:/sb/usernotes",
+items:[
+{
+anchors:11,
+background:"#ffffff",
+borderType:"SpecialMatteBorder,0.0,0.0,1.0,0.0,#000000,#000000,#000000,#000000,0.0,",
+displaysTags:true,
+formIndex:10000,
+horizontalAlignment:2,
+location:"70,30",
+mediaOptions:14,
+mnemonic:"",
+name:"BTN_showDetails",
+onActionMethodID:"19F0AF03-6D23-4555-9AC8-BD352DA33274",
+showClick:false,
+showFocus:false,
+size:"400,20",
+text:"<html>\r\
+  <head>\r\
+  <\/head>\r\
+  <body>\r\
+%%search_usernote_title%%\r\
+  <\/body>\r\
+<\/html>",
+typeid:7,
+uuid:"3EF6CB0E-A331-4D80-9353-8812716F9CF0"
+},
+{
+background:"#ffffff",
+height:60,
+partType:5,
+typeid:19,
+uuid:"C44CC1D5-5CA3-4D0D-9E20-9FA5C432495E"
+}
+],
+name:"sb_search_searchComNotes",
+namedFoundSet:"separate",
+paperPrintScale:100,
+scrollbars:33,
+size:"640,60",
+typeid:3,
+uuid:"86C62133-622F-4812-B0FB-8E7D1A00FB2C",
+view:3

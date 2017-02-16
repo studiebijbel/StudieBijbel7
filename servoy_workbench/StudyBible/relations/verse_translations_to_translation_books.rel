@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/translation_books",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"translation_book_id",typeid:23,uuid:"9170114d-44c7-4c3e-8a76-2db122b94c22"}
+],
+name:"verse_translations_to_translation_books",
+primaryDataSource:"db:/sb/verse_translations",
+typeid:22,
+uuid:"54ac7575-6b87-4176-9dfe-854ee614bca5"

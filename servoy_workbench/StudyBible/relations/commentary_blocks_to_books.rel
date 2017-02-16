@@ -1,0 +1,9 @@
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/sb/books",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"book_id",typeid:23,uuid:"5810FB25-BB52-46AC-9285-C9D8ED3C5B32"}
+],
+name:"commentary_blocks_to_books",
+primaryDataSource:"db:/sb/commentary_blocks",
+typeid:22,
+uuid:"248F4A28-F5AE-41DB-BF32-5A8C6861BCE4"

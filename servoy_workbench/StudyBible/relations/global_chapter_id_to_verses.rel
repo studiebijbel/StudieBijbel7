@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/verses",
+items:[
+{foreignColumnName:"chapter_id",primaryDataProviderID:"globals.chapter_id",typeid:23,uuid:"db2c423c-6d9f-4784-acf3-acdc6e0111ff"}
+],
+name:"global_chapter_id_to_verses",
+primaryDataSource:"db:/sb/chapters",
+typeid:22,
+uuid:"cd59b733-efce-477c-91de-fbd8f34c36f9"

@@ -1,0 +1,45 @@
+CVB Words
+Primairy Parameter
+	word_strong	=	word_strong ID
+	verse_id		=	verse ID
+
+Other paramaters
+word_study_id		=	Word Study ID
+
+wordStudyChk		=	if 1 detail 2 wordt getoond
+wordFormsChk		=	if 1 detail 3 wordt getoond
+wordConcordanceCHK	=	if 1 detail 4 wordt getoond
+
+	
+
+
+CVB verse translations
+
+Primairy Parameter
+
+	verse_id		=	Verse ID
+
+wordTranslate1 		=	1e rij van tabel
+wordTranslate2		=	2e rij van tabel
+wordTranslate3		=	3e rij van tabel
+wordTranslate4		=	4e rij van tabel
+wordTranslate5		=	5e rij van tabel
+!!Parameter meegeven als HTML na elk woord een enter!!
+
+
+TranslationChk		=	if 1 Detail 2 (vers vertalingen) 					wordt getoond
+
+
+
+CVB verse commentary
+
+Primairy Parameters
+	book_id		=	Selected book ID
+	chapter_id		=	Selected chapter ID
+	verses_id		=	Selected verses ID
+
+
+CVB articles
+
+Primairy Parameter
+	articles_pk		=	artikel ID

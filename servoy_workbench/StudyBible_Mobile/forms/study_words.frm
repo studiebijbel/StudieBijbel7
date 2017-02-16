@@ -1,0 +1,15 @@
+extendsID:"-1",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"6BE6BC52-EF74-4057-A843-784E593F0CC2"
+}
+],
+name:"study_words",
+showInMenu:true,
+size:"640,480",
+styleName:"CvB2",
+typeid:3,
+uuid:"E817A763-57AA-4E9F-A1E7-6F9BDF200797"

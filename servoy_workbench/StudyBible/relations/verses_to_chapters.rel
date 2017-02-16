@@ -1,0 +1,8 @@
+foreignDataSource:"db:/sb/chapters",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"chapter_id",typeid:23,uuid:"4cfe5566-3ebc-44a6-bb6a-01fa972400c9"}
+],
+name:"verses_to_chapters",
+primaryDataSource:"db:/sb/verses",
+typeid:22,
+uuid:"61bc28ea-dabe-4142-9953-349191688595"

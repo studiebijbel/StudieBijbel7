@@ -1,0 +1,11 @@
+dataProviderID1:"book",
+dataProviderID2:"code",
+name:"abrev_partial",
+relationName:"globals_to_translation_books_partial",
+returnDataProviders:2,
+separator:" ",
+showDataProviders:1,
+sortOptions:"nt_order asc",
+typeid:34,
+uuid:"f56f78a4-1c30-4be2-ab08-398029e636e2",
+valueListType:1

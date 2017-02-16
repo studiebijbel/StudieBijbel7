@@ -1,0 +1,11 @@
+dataProviderID1:"book_name",
+dataProviderID2:"pk",
+name:"booksOT",
+relationName:"globals_book_ot_to_books",
+returnDataProviders:2,
+separator:" ",
+showDataProviders:1,
+sortOptions:"order_number asc",
+typeid:34,
+uuid:"3CFBB5D5-2AC8-42A6-811C-8162B396FB7D",
+valueListType:1

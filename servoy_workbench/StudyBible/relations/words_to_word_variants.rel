@@ -1,0 +1,8 @@
+foreignDataSource:"db:/sb/word_variants",
+items:[
+{foreignColumnName:"word_id",primaryDataProviderID:"pk",typeid:23,uuid:"2040ca6f-e45e-4e08-8345-8f4a077282a7"}
+],
+name:"words_to_word_variants",
+primaryDataSource:"db:/sb/words",
+typeid:22,
+uuid:"d356d5b1-68ab-47b7-8bf1-7bbd48b7b4f1"

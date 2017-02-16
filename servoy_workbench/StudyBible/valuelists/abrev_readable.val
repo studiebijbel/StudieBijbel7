@@ -1,0 +1,12 @@
+addEmptyValue:1,
+customValues:null,
+dataProviderID1:"pk",
+dataProviderID2:"book",
+dataSource:"db:/sb/translation_books",
+name:"abrev_readable",
+relationName:null,
+returnDataProviders:1,
+showDataProviders:2,
+typeid:34,
+uuid:"F3062C9A-305D-4CCF-83D1-3E4ED1A82AD9",
+valueListType:1

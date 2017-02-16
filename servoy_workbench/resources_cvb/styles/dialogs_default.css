@@ -1,0 +1,9 @@
+label.dialogs_message
+{
+	font: 12pt 'Lucida Grande', Arial, Helvetica, sans-serif;
+}
+
+label.dialogs_icon_generic { }
+label.dialogs_icon_info { }
+label.dialogs_icon_warning { }
+label.dialogs_icon_error { }

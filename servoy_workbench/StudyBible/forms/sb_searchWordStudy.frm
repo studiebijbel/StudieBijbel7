@@ -1,0 +1,51 @@
+borderType:"EmptyBorder,0,0,0,0",
+dataSource:"db:/sb/word_study",
+items:[
+{
+anchors:11,
+background:"#ffffff",
+borderType:"MatteBorder,0,0,1,0,#000000",
+displaysTags:true,
+formIndex:10000,
+horizontalAlignment:2,
+location:"20,10",
+mediaOptions:14,
+name:"BTN_showWordStudy",
+onActionMethodID:"D26E43BE-C922-4129-9F4A-684B4A2092A9",
+showClick:false,
+showFocus:false,
+size:"610,45",
+text:"<html>\r\
+  <head>\r\
+\r\
+  <\/head>\r\
+  <body>\r\
+    <table width=\"100%\" padding=\"0\" spacing=\"0\">\r\
+\t\t<tr>\r\
+\t\t\t<td valign=\"top\"><font face=\"%%c_font%%\"><em>%%original%%<\/em><\/font>&nbsp;&nbsp; <\/td>\r\
+\t\t\t<td width=\"100px\" valign=\"top\"><strong>%%word_strong%%<\/strong> &nbsp;&nbsp;  <\/td>\r\
+\t\t\t<td width=\"90%\" valign=\"top\">%%search_first_line%%<\/td>\r\
+\t\t<\/tr>\r\
+\t<\/table>\r\
+  <\/body>\r\
+<\/html>\r\
+\r\
+",
+typeid:7,
+uuid:"25CA492D-B89F-4D92-91C0-29EEDCB4FC90"
+},
+{
+height:67,
+partType:5,
+typeid:19,
+uuid:"D69D59D5-AFC5-4B82-9354-95368F156CD6"
+}
+],
+name:"sb_searchWordStudy",
+namedFoundSet:"separate",
+paperPrintScale:100,
+scrollbars:33,
+size:"640,67",
+typeid:3,
+uuid:"A42DECD8-2B09-402C-B5EE-C8C118F3B86E",
+view:3

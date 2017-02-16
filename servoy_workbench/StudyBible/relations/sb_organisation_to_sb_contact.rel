@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/sb_data/sb_contact",
+items:[
+{foreignColumnName:"sb_organisation_id",primaryDataProviderID:"sb_organisation_id",typeid:23,uuid:"170C28BC-12E3-4CC4-99D2-BA4F85675C28"}
+],
+name:"sb_organisation_to_sb_contact",
+primaryDataSource:"db:/sb_data/sb_organisation",
+typeid:22,
+uuid:"304D0F24-476A-4940-911D-ACD056DDA791"

@@ -1,0 +1,11 @@
+dataProviderID1:"chapter_no",
+dataProviderID2:"chapter_no",
+name:"testamentChapters",
+relationName:"global_book_id_to_chapters",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:1,
+sortOptions:"chapter_no asc",
+typeid:34,
+uuid:"58d02b2a-4354-4c06-b3b4-3bc3378d21bd",
+valueListType:1

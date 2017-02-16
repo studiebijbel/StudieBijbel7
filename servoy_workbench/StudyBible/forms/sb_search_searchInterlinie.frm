@@ -1,0 +1,46 @@
+borderType:"EmptyBorder,0,0,0,0",
+dataSource:"db:/sb/words",
+items:[
+{
+background:"#ffffff",
+height:60,
+partType:5,
+typeid:19,
+uuid:"13D7DFE0-F8AA-4FDF-9D59-D5001EE350CB"
+},
+{
+anchors:11,
+background:"#ffffff",
+borderType:"SpecialMatteBorder,0.0,0.0,1.0,0.0,#000000,#000000,#000000,#000000,0.0,",
+displaysTags:true,
+formIndex:10000,
+horizontalAlignment:2,
+location:"20,20",
+mediaOptions:14,
+name:"BTN_showDetails",
+onActionMethodID:"9D3393CA-AE5C-4E64-8CD0-3E85A4F92384",
+showClick:false,
+showFocus:false,
+size:"605,20",
+text:"<html>\r\
+  <head>\r\
+\r\
+  <\/head>\r\
+  <body>\r\
+    <strong>%%words_to_verses.calc_book_name%% %%words_to_verses.chapter_number%%:%%words_to_verses.verse_number%%<\/strong> %%calc_testament%%    \r\
+    %%calc_search_word_translation%%\r\
+  <\/body>\r\
+<\/html>",
+typeid:7,
+uuid:"E3BB9CE8-9C11-4E25-88C4-5A39627A5AA0"
+}
+],
+name:"sb_search_searchInterlinie",
+namedFoundSet:"separate",
+onShowMethodID:"8C5B36FF-1EEB-44D4-83F1-91F59C7AA697",
+paperPrintScale:100,
+scrollbars:33,
+size:"640,60",
+typeid:3,
+uuid:"05EBEC0B-5A38-45BC-ABDC-38B778B87CCC",
+view:3

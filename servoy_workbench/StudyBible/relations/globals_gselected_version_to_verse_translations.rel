@@ -1,0 +1,11 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/verse_translations",
+items:[
+{foreignColumnName:"verse_id",primaryDataProviderID:"pk",typeid:23,uuid:"5DFDF217-C993-4B17-A032-BE2D5DDA9BD4"},
+{foreignColumnName:"translation_book_id",primaryDataProviderID:"scopes.globals.sb_gSelectedVersion",typeid:23,uuid:"D48AEF89-5B51-4B11-B1CD-731AD65BA981"}
+],
+joinType:1,
+name:"globals_gselected_version_to_verse_translations",
+primaryDataSource:"db:/sb/verses",
+typeid:22,
+uuid:"4C35EDF3-8BAE-4852-83C0-FD12A0F99A46"

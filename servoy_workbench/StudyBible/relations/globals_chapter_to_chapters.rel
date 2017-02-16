@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/chapters",
+items:[
+{foreignColumnName:"chapter_no",primaryDataProviderID:"globals.chapter",typeid:23,uuid:"431fe055-aaa4-46ea-90e2-be2905d36db9"},
+{foreignColumnName:"book_id",primaryDataProviderID:"globals.book_id",typeid:23,uuid:"c4a38527-f1a7-49ee-b6a2-7077d33c6c29"}
+],
+name:"globals_chapter_to_chapters",
+primaryDataSource:"db:/sb/one",
+typeid:22,
+uuid:"69287177-dce8-454a-9603-474f1d656e11"

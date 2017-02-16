@@ -1,0 +1,11 @@
+addEmptyValue:1,
+dataProviderID1:"pk",
+dataProviderID2:"book_name",
+name:"sb_importbooks",
+relationName:"globals_sb_import_testament_to_books",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:2,
+typeid:34,
+uuid:"28D39CE0-B323-4271-A0E0-68664B555031",
+valueListType:1

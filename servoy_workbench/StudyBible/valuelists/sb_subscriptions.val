@@ -1,0 +1,10 @@
+addEmptyValue:1,
+dataProviderID1:"sb_subscription_id",
+dataProviderID2:"name",
+dataSource:"db:/sb_data/sb_subscriptions",
+name:"sb_subscriptions",
+returnDataProviders:1,
+showDataProviders:2,
+typeid:34,
+uuid:"69D73681-3E12-41CB-AA71-6F36181AA9A2",
+valueListType:1

@@ -1,0 +1,6 @@
+addEmptyValue:1,
+customValues:"Ja|1\r\
+Nee|0",
+name:"yes_no",
+typeid:34,
+uuid:"FA44F2D4-5EE3-4FE9-BEC0-31FA56EFE461"

@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/words",
+items:[
+{foreignColumnName:"verse_id",primaryDataProviderID:"pk",typeid:23,uuid:"533f968a-17b8-4213-80d9-66c3128e7dd7"}
+],
+name:"verses_to_words",
+primaryDataSource:"db:/sb/verses",
+typeid:22,
+uuid:"caa2398c-76c1-4913-a1c0-48d5c336ca99"

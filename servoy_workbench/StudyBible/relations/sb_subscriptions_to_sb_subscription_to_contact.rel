@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb_data/sb_subscription_to_contact",
+items:[
+{foreignColumnName:"sb_subscription_id",primaryDataProviderID:"sb_subscription_id",typeid:23,uuid:"EA920707-5415-417E-8E09-DD63526762DB"}
+],
+joinType:1,
+name:"sb_subscriptions_to_sb_subscription_to_contact",
+primaryDataSource:"db:/sb_data/sb_subscriptions",
+typeid:22,
+uuid:"A6348A88-2AF6-4FB5-AF71-9E36192A8794"

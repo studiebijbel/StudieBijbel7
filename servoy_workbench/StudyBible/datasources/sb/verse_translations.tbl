@@ -1,0 +1,11 @@
+dataSource:"db:/sb/verse_translations",
+items:[
+{
+dataProviderIDToAggregate:"pk",
+name:"total",
+typeid:40,
+uuid:"9a5b8898-83ad-4a5a-a967-6206d4dede82"
+}
+],
+typeid:39,
+uuid:"3884067c-2371-4e1b-83f5-233f3558955e"

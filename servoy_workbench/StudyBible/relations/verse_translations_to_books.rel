@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/books",
+items:[
+{foreignColumnName:"book_name",operator:0,primaryDataProviderID:"calc_book_name",typeid:23,uuid:"0CA7B544-9938-44C1-AFBA-FF2BB1E33BFD"}
+],
+joinType:1,
+name:"verse_translations_to_books",
+primaryDataSource:"db:/sb/verse_translations",
+typeid:22,
+uuid:"CD028554-8B59-445D-8504-6A3BD0943719"

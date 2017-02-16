@@ -1,0 +1,8 @@
+foreignDataSource:"db:/sb/verses",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"verse_id",typeid:23,uuid:"88e049bd-8f9f-4e4a-95e4-07108c101bc2"}
+],
+name:"verse_translations_to_verses",
+primaryDataSource:"db:/sb/verse_translations",
+typeid:22,
+uuid:"7b35fa39-b676-4700-a613-ecfe7338647f"

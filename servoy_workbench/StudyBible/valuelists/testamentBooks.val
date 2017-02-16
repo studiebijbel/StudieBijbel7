@@ -1,0 +1,12 @@
+addEmptyValue:1,
+dataProviderID1:"book_name",
+dataProviderID2:"pk",
+name:"testamentBooks",
+relationName:"global_testament_to_books",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:1,
+sortOptions:"order_number asc",
+typeid:34,
+uuid:"22aa0373-6954-4581-82bc-6a5b3419be87",
+valueListType:1

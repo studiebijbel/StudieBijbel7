@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/verses",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"pk",typeid:23,uuid:"fa8efabf-ff5f-471c-9566-c86cb61df493"}
+],
+name:"verses_to_verses",
+primaryDataSource:"db:/sb/verses",
+typeid:22,
+uuid:"c63e6439-82f7-4668-b4d3-4d502f069de5"

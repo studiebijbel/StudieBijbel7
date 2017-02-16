@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/translation_books",
+items:[
+{foreignColumnName:"show_online",primaryDataProviderID:"LITERAL:1",typeid:23,uuid:"7076BB6C-C664-4B65-A3BB-4AC7DFBD51BF"}
+],
+joinType:1,
+name:"show_translation_books",
+primaryDataSource:"db:/sb/translation_books",
+typeid:22,
+uuid:"9A6786D8-1951-418D-86F0-68CF0EFDF7AD"

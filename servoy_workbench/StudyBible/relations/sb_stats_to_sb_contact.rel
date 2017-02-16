@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb_data/sb_contact",
+items:[
+{foreignColumnName:"sb_contact_id",primaryDataProviderID:"sb_contact_id",typeid:23,uuid:"3F1720AC-3987-4F72-B927-EFDB6B899FE1"}
+],
+joinType:1,
+name:"sb_stats_to_sb_contact",
+primaryDataSource:"db:/sb_data/sb_stats",
+typeid:22,
+uuid:"ABF270B0-37F4-48D4-9CFA-6D2C9F5BBE5A"

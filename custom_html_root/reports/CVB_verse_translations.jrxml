@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2016-12-14T10:39:37 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cd256552-b07e-4d9b-8ac5-3b94af91a4be">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="verse_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1000001)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="translationChk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="wordTranslate1" class="java.lang.String"/>
+	<parameter name="wordTranslate2" class="java.lang.String"/>
+	<parameter name="wordTranslate3" class="java.lang.String"/>
+	<parameter name="wordTranslate4" class="java.lang.String"/>
+	<parameter name="wordTranslate5" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Servoy6\\application_server\\server\\webapps\\ROOT\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="languageParam" class="java.lang.Integer"/>
+	<parameter name="textEdition" class="java.lang.String"/>
+	<parameter name="selectedTranslations" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM one limit 1
+--SELECT TOP 1 * FROM one]]>
+	</queryString>
+	<field name="oneid" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="creationdate" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="modifier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="modificationdate" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="creator" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="book_name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="22" width="162" height="13" uuid="3ddd5492-fb09-4ff0-8ad4-cd19e3d9e232"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Oorspronkelijke tekst" : "Traducción interlineal" )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="222" y="35" width="111" height="13" uuid="f625074c-472d-451d-820d-8afeea6ba3e9"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{wordTranslate3}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="333" y="35" width="111" height="13" uuid="1f767353-1982-409a-ab89-4290f1e43107"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{wordTranslate4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="444" y="35" width="111" height="13" uuid="1c100849-c6e3-4b88-a61b-a7f9899b324d"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{wordTranslate5}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="111" y="35" width="111" height="13" uuid="f477379e-bf7e-4f06-8e70-67bdba76f9e4"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{wordTranslate2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="35" width="111" height="13" uuid="a2b263e6-b7d3-47f1-84e2-a0e880441222"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{wordTranslate1}]]></textFieldExpression>
+			</textField>
+			<subreport runToBottom="true">
+				<reportElement x="0" y="0" width="555" height="13" uuid="f335c526-4212-457c-bce0-be2335b2d60c"/>
+				<subreportParameter name="textEdition">
+					<subreportParameterExpression><![CDATA[$P{textEdition}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="verse_id">
+					<subreportParameterExpression><![CDATA[$P{verse_id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "CVB_verse_translations_subreport2.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="39" splitType="Stretch">
+			<printWhenExpression><![CDATA[new Boolean($P{translationChk}.intValue() == 1)]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="2" width="162" height="13" uuid="a31e643f-306a-4d15-8657-c1135ad33c14"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Bijbel vertalingen" : "Traducciones de la Biblia" )]]></textFieldExpression>
+			</textField>
+			<subreport isUsingCache="false">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="19" width="555" height="20" uuid="d421a134-eb6a-4057-80e8-6e6b230ae63f"/>
+				<subreportParameter name="SUBREPORT_DIR">
+					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="languageParam">
+					<subreportParameterExpression><![CDATA[$P{languageParam}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="wordTranslate4">
+					<subreportParameterExpression><![CDATA[$P{wordTranslate4}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="wordTranslate5">
+					<subreportParameterExpression><![CDATA[$P{wordTranslate5}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="textEdition">
+					<subreportParameterExpression><![CDATA[$P{textEdition}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="wordTranslate1">
+					<subreportParameterExpression><![CDATA[$P{wordTranslate1}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="translationChk">
+					<subreportParameterExpression><![CDATA[$P{translationChk}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="wordTranslate3">
+					<subreportParameterExpression><![CDATA[$P{wordTranslate3}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="wordTranslate2">
+					<subreportParameterExpression><![CDATA[$P{wordTranslate2}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="verse_id">
+					<subreportParameterExpression><![CDATA[$P{verse_id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "CVB_verse_translations_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="8" width="555" height="14" uuid="caff9a3f-9e97-4f67-9e86-ed48e7b813f6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "© 2016 Centrum voor Bijbelonderzoek, Postbus 139, 3940 AC Doorn, www.studiebijbel.nl" : "Comentario BibliaDeEstudio.org" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

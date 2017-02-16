@@ -1,0 +1,8 @@
+foreignDataSource:"db:/sb/books",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"book_id",typeid:23,uuid:"39a4f731-a554-431e-8294-62590c106b7d"}
+],
+name:"chapters_to_books",
+primaryDataSource:"db:/sb/chapters",
+typeid:22,
+uuid:"e6d4aa6e-35f9-4ec6-9bf7-77841b7fbfc0"

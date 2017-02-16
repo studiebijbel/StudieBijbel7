@@ -1,0 +1,12 @@
+addEmptyValue:1,
+dataProviderID1:"book",
+dataProviderID2:"code",
+name:"abrev_integral",
+relationName:"globals_to_translation_books_integral",
+returnDataProviders:2,
+separator:" ",
+showDataProviders:1,
+sortOptions:"nt_order asc",
+typeid:34,
+uuid:"8858a380-d5de-47a2-b00f-dca6d626ddc4",
+valueListType:1

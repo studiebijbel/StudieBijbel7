@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/translation_books",
+items:[
+{foreignColumnName:"nt_scope",primaryDataProviderID:"globals.sb_gBookIntegral",typeid:23,uuid:"05ba2662-b7a6-4bb7-bbc6-1302431f456c"},
+{foreignColumnName:"show_online",primaryDataProviderID:"globals.sb_gShowOnline",typeid:23,uuid:"61588aa9-db5b-4d27-b202-2d74078d7f97"}
+],
+name:"globals_to_translation_books_integral",
+primaryDataSource:"db:/sb/one",
+typeid:22,
+uuid:"c4e0c7ed-8102-4196-a485-99a0d056c5f9"

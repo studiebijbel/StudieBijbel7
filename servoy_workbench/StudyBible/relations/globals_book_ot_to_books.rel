@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/books",
+items:[
+{foreignColumnName:"testament",primaryDataProviderID:"globals.books_OT",typeid:23,uuid:"48925446-C974-4117-B912-9988EA0D3D6E"},
+{foreignColumnName:"show_in_nav",operator:4,primaryDataProviderID:"globals.show_books",typeid:23,uuid:"594E5CE0-43EB-4FC6-9A28-AF814F696C0D"}
+],
+name:"globals_book_ot_to_books",
+primaryDataSource:"db:/sb/one",
+typeid:22,
+uuid:"D7A220B3-7724-4471-B098-6B083959D911"

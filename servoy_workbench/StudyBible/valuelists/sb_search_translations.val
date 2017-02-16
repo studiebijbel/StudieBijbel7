@@ -1,0 +1,11 @@
+addEmptyValue:1,
+dataProviderID1:"code",
+name:"sb_search_translations",
+relationName:"show_translation_books",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:1,
+sortOptions:"nt_order asc",
+typeid:34,
+uuid:"8FC7FD8E-6B34-4505-9637-01BA34205391",
+valueListType:1

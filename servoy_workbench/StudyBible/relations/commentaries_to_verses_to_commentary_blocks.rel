@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/commentary_blocks",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"commentary_id",typeid:23,uuid:"3d9ba764-69e5-4b3e-b689-9c3f1b3fdd8a"}
+],
+name:"commentaries_to_verses_to_commentary_blocks",
+primaryDataSource:"db:/sb/commentaries_to_verses",
+typeid:22,
+uuid:"13425946-9af0-48b2-bc0a-2175b88dd17a"

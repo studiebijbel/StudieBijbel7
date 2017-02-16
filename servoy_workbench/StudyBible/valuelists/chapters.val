@@ -1,0 +1,10 @@
+addEmptyValue:1,
+dataProviderID1:"chapter_no",
+name:"chapters",
+relationName:"global_book_id_to_chapters",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:1,
+typeid:34,
+uuid:"4677955b-98ac-42b3-a43f-c2c3a69d4726",
+valueListType:1

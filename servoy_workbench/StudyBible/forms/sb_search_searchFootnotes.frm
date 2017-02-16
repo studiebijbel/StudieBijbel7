@@ -1,0 +1,47 @@
+borderType:"EmptyBorder,0,0,0,0",
+dataSource:"db:/sb/footnotes",
+items:[
+{
+background:"#ffffff",
+height:110,
+partType:5,
+typeid:19,
+uuid:"641EB691-140E-427F-B7B5-74EDFA0C566B"
+},
+{
+anchors:11,
+background:"#ffffff",
+borderType:"SpecialMatteBorder,0.0,0.0,1.0,0.0,#000000,#000000,#000000,#000000,0.0,",
+dataProviderID:"searchResult",
+displaysTags:true,
+fontType:"sansserif,0,11",
+formIndex:10000,
+horizontalAlignment:2,
+location:"70,30",
+mediaOptions:14,
+mnemonic:"",
+name:"BTN_openCommentary",
+onActionMethodID:"A7DDEC4E-C44D-43E4-B934-CB467E1D46DA",
+showClick:false,
+showFocus:false,
+size:"540,20",
+text:"<html>\r\
+  <head>\r\
+  <\/head>\r\
+  <body> \r\
+%%searchResult%%   \r\
+  <\/body>\r\
+<\/html>",
+typeid:7,
+uuid:"D7EE992D-959C-438B-9E63-2DB85E486739",
+verticalAlignment:0
+}
+],
+name:"sb_search_searchFootnotes",
+namedFoundSet:"separate",
+paperPrintScale:100,
+scrollbars:33,
+size:"640,110",
+typeid:3,
+uuid:"76F9E3C9-83C7-454B-BF2A-0967C47C09E2",
+view:3

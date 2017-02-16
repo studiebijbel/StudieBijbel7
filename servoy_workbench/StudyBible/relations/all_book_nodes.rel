@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/book_nodes",
+items:[
+{foreignColumnName:"parent_id",primaryDataProviderID:"globals.parent_id1",typeid:23,uuid:"f2947639-9522-4c5b-88f2-43f75a04a086"}
+],
+name:"all_book_nodes",
+primaryDataSource:"db:/sb/book_nodes",
+typeid:22,
+uuid:"5108fdf6-644b-4fe1-9070-a634d5857cff"

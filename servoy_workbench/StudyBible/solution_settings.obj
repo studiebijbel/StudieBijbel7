@@ -1,0 +1,8 @@
+firstFormID:"3C7B0F31-3D8E-4D96-911C-71C100CA0910",
+i18nDataSource:"db:/sb/messages",
+modulesNames:"mod_dialog,mod_DM_html,nphsHTMLEditor",
+onCloseMethodID:"553ac502-16c3-426c-9c76-096824c21755",
+onOpenMethodID:"13a9d54b-e7ca-4471-a5db-3581c3a838ef",
+titleText:"<empty>",
+typeid:43,
+uuid:"e1e99c52-c113-48df-983a-67d882c5cc54"

@@ -1,0 +1,12 @@
+addEmptyValue:1,
+dataProviderID1:"book_name",
+dataProviderID2:"pk",
+name:"testamentBooksToId",
+relationName:"global_testament_to_books",
+returnDataProviders:2,
+separator:" ",
+showDataProviders:1,
+typeid:34,
+useTableFilter:true,
+uuid:"26314B26-D3CB-42D3-AF96-4F54641B48C7",
+valueListType:1

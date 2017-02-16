@@ -1,0 +1,9 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/articles",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"article_id",typeid:23,uuid:"6aad63c1-d10b-4238-8b19-90577424b7da"}
+],
+name:"paragraphs_to_articles",
+primaryDataSource:"db:/sb/paragraphs",
+typeid:22,
+uuid:"1bbba4ed-3b20-4fb7-8f46-94799397eb2c"

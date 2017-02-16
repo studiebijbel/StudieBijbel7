@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/analyze_concordance",
+items:[
+{foreignColumnName:"concordance_id",operator:0,primaryDataProviderID:"pk",typeid:23,uuid:"1A90879C-A724-438C-83DF-89168428B257"}
+],
+joinType:1,
+name:"con_word_study_concordance_to_analyze_concordance",
+primaryDataSource:"db:/sb/word_study_concordance",
+typeid:22,
+uuid:"5EBAC6F2-9BA8-4B9A-877A-A5602E3F1B42"

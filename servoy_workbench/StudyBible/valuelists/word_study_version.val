@@ -1,0 +1,12 @@
+addEmptyValue:0,
+customValues:null,
+dataProviderID1:"version_key",
+dataProviderID2:"version_description",
+dataSource:"db:/sb/word_study_version",
+name:"word_study_version",
+relationName:null,
+returnDataProviders:1,
+showDataProviders:2,
+typeid:34,
+uuid:"75019787-AB07-4227-ABDA-99D2AD582BA6",
+valueListType:1

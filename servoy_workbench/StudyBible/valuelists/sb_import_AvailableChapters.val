@@ -1,0 +1,12 @@
+addEmptyValue:1,
+dataProviderID1:"pk",
+dataProviderID2:"chapter_no",
+name:"sb_import_AvailableChapters",
+relationName:"sb_import_global_bookid_to_chapters",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:2,
+sortOptions:"chapter_no asc",
+typeid:34,
+uuid:"969C20A2-4C32-4E24-B67C-DCD0308EC3E7",
+valueListType:1

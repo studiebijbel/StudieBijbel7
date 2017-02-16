@@ -1,0 +1,315 @@
+field
+{
+	background-color:#f0f0f0; 
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #cccccc;
+	font-family: Verdana, sans-serif;
+	font-size: 11pt;
+	color: #333;
+	text-align: left; 
+	margin: 2px; 
+	font-weight: normal;
+}
+field.bold
+{
+	font-weight: bold;
+}
+field.white
+{
+	background-color:#ffffff;
+}
+field.oheader
+{
+	font-weight: bold;
+	font-size: 18pt;
+	color: #eb7c12;
+}
+field.combo
+{
+
+
+}
+field.navlist
+{
+	font-size: 11pt;
+	color: #000000;
+	border-width: 0px 0px 0px 0px;
+	background-color: #ffffff;
+	font-weight: bold;
+}
+field.noborder
+{
+	border-width: 0px 0px 0px 0px;
+}
+field.noborder10px
+{
+	border-width: 0px 0px 0px 0px;
+	font-size: 10px;
+}
+
+field.nobordersmall
+{
+	font-size: 9pt;
+	color: #000000;
+	border-width: 0px 0px 0px 0px;
+}
+field.noborder12pt
+{
+	border-width: 0px 0px 0px 0px;
+	font-size: 12pt;
+}
+field.reportsm
+{
+	font-size: 9pt;
+	color: #000000;
+}
+field.reportsmbold
+{
+	font-weight: bold;
+	font-size: 9pt;
+	color: #000000;
+}
+field.reportnobordersm
+{
+	font-size: 9pt;
+	color: #000000;
+	border-width: 0px 0px 0px 0px;
+}
+field.noborderbold
+{
+	font-weight: bold;
+	border-width: 0px 0px 0px 0px;
+}
+portal
+{
+	background-color: #ffffff; 
+	border-style: solid; 
+}
+tabpanel.leftcolumn
+{
+	background-color: #ffffcc;
+	border-style: solid;
+	border-width: 10pt;
+	border-color: #000;
+}
+form
+{
+	background-color: #ffffff; 
+	border-style: none; 
+}
+label
+{
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+	color: #666666;
+    text-align: left;
+}
+label.med
+{
+	font-size: 12pt;
+}
+label.lg
+{
+	font-size: 14pt;
+}
+label.topnav
+{
+	font-weight: bold;
+	font-size: 11pt;
+	color: #666666;
+}
+label.navlstmed
+{
+	font-weight: normal;
+	font-size: 11pt;
+	color: #666666;
+}
+label.navlstsm
+{
+	font-weight: normal;
+	font-size: 10pt;
+	color: #666666;
+}
+label.whte
+{
+	color: #ffffff;
+}
+label.whtctr
+{
+	color: #ffffff;
+    text-align: center;
+}
+label.whtmed
+{
+	color: #ffffff;
+   	font-size: 12pt;
+}
+label.whtlg
+{
+	color: #ffffff;
+   	font-size: 18pt;
+}
+label.btn
+{
+	color: #ffffff;
+    text-align: center;
+	font-size: 11pt;
+	background-color: #666666;
+}
+label.darkgrc
+{
+	color: #ffffff;
+	background-color: #666666;
+}
+label.darkgrcmed
+{
+	font-size: 11pt;
+	color: #ffffff;
+	background-color: #666666;
+}
+label.medgrc
+{
+	color: #ffffff;
+	background-color: #999999;
+}
+label.ltgrc
+{
+	color: #ffffff;
+	background-color: #ebebeb;
+}
+label.solidgrc
+{
+	color: #666666;
+	background-color: #666666;
+}
+label.fieldlbl
+{
+    text-align: right;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	background: #e6e4df;
+	margin: 1px 8px 1px 1px;
+}
+label.list
+{
+	font-weight: normal;
+	font-size: 11pt;
+	color: #333;
+    text-align: left;
+	background: none;
+}
+label.listbold
+{
+	font-size: 11pt;
+	color: #333;
+    text-align: left;
+	background: none;
+}
+label.oheader
+{
+	font-weight: bold;
+	font-size: 18pt;
+	color: #eb7c12;
+    text-align: left;
+}
+label.revoheader
+{
+	font-weight: bold;
+	font-size: 18pt;
+	background-color: #eb7c12;
+	color: #ffffff;
+    text-align: left;
+}
+label.headernobold
+{
+	font-weight: normal;
+	font-size: 18pt;
+	color: #eb7c12;
+    text-align: left;
+}
+label.xboxtitle
+{
+	color: #003372;
+	font-weight: bold;
+	text-align: left;
+}
+label.tabmenu
+{
+	color: #ffffff;
+	font-size: 11pt;
+	text-align: center;
+}
+label.grey
+{
+	font-weight: normal;
+	font-size: 11pt;
+	color: #666666;
+    text-align: left;
+}
+label.smgrey
+{
+	font-weight: normal;
+	font-size: 9pt;
+	color: #666666;
+    text-align: left;
+}
+label.image
+{
+	font-weight: normal;
+	font-size: 11pt;
+	color: #000000;
+    text-align: left;
+	background-color: #FFFFFF;
+}
+label.report
+{
+	font-weight: normal;
+	font-size: 9pt;
+	color: #000000;
+    text-align: left;
+}
+label.reportbold
+{
+	font-weight: bold;
+	font-size: 9pt;
+	color: #000000;
+    text-align: left;
+}
+label.reportsm
+{
+	font-weight: normal;
+	font-size: 9pt;
+	color: #000000;
+    text-align: left;
+}
+label.reportxsm
+{
+	font-weight: normal;
+	font-size: 8pt;
+	color: #000000;
+    text-align: left;
+}
+label.reportboldsm
+{
+	font-weight: bold;
+	font-size: 9pt;
+	color: #000000;
+    text-align: left;
+}
+label.headerreport
+{
+	font-weight: bold;
+	font-size: 18pt;
+	color: #000000;
+    text-align: left;
+}
+label.subheadreport
+{
+	font-weight: bold;
+	font-size: 12pt;
+	color: #000000;
+    text-align: left;
+}

@@ -1,0 +1,12 @@
+addEmptyValue:1,
+dataProviderID1:"pk",
+dataProviderID2:"name",
+dataSource:"db:/sb/commentaries",
+name:"sb_import_commentaries",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:2,
+sortOptions:"pk asc",
+typeid:34,
+uuid:"9E9324B8-C229-4D56-8649-E51EF591A2F0",
+valueListType:1

@@ -1,0 +1,8 @@
+foreignDataSource:"db:/sb/analyze_concordance",
+items:[
+{foreignColumnName:"concordance_id",primaryDataProviderID:"pk",typeid:23,uuid:"26753163-2d8f-4203-9011-c6a435a07bfd"}
+],
+name:"word_study_concordance_to_analyze_concordance",
+primaryDataSource:"db:/sb/word_study_concordance",
+typeid:22,
+uuid:"ececf9a9-650b-42e4-bbc3-7e5cd7eb5c66"

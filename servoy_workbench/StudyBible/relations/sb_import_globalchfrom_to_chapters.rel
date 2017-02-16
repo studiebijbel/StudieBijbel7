@@ -1,0 +1,9 @@
+allowParentDeleteWhenHavingRelatedRecords:false,
+foreignDataSource:"db:/sb/chapters",
+items:[
+{foreignColumnName:"pk",primaryDataProviderID:"globals.sb_import_chapterFromId",typeid:23,uuid:"5D6AF0A0-C667-4681-889C-BA745DA15216"}
+],
+name:"sb_import_globalchfrom_to_chapters",
+primaryDataSource:"db:/sb/commentary_blocks",
+typeid:22,
+uuid:"D3BDD9D9-61A8-4454-90B3-5DF662DCCD89"

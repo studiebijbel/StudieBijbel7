@@ -1,0 +1,14 @@
+dataSource:"db:/sb/books",
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"CFC3D935-40A4-4211-B79F-F8B2CD293CBD"
+}
+],
+name:"books",
+paperPrintScale:100,
+size:"640,480",
+typeid:3,
+uuid:"7A75CB02-478A-4BE2-AB13-669ED9C5D0E5"

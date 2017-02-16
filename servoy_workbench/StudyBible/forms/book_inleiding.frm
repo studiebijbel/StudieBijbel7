@@ -1,0 +1,97 @@
+dataSource:"db:/sb/book_inleiding",
+items:[
+{
+formIndex:10600,
+location:"60,130",
+mediaOptions:14,
+size:"80,20",
+tabSeq:-1,
+text:"book_id",
+transparent:true,
+typeid:7,
+uuid:"177c7100-5d83-466f-8394-ca5c80a14063"
+},
+{
+formIndex:10400,
+location:"60,100",
+mediaOptions:14,
+size:"80,20",
+tabSeq:-1,
+text:"article_id",
+transparent:true,
+typeid:7,
+uuid:"1bcddff1-395c-4644-8579-09ed0dae8c43"
+},
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"5e13eb65-fc45-4f73-9c4c-7d575bf8f389"
+},
+{
+dataProviderID:"article_id",
+formIndex:10300,
+location:"150,100",
+size:"80,20",
+typeid:4,
+uuid:"70ea03f6-da0f-4ff7-905d-ecfdd7c1fdab"
+},
+{
+beanClassName:"javax.swing.JProgressBar",
+beanXML:"<?xml version=\"1.0\" encoding=\"UTF-8\"?> 
+<java version=\"1.6.0_12\" class=\"java.beans.XMLDecoder\"> 
+ <object class=\"javax.swing.JProgressBar\"> 
+  <void property=\"size\"> 
+   <object class=\"java.awt.Dimension\"> 
+    <int>250<\/int> 
+    <int>50<\/int> 
+   <\/object> 
+  <\/void> 
+  <void property=\"name\"> 
+   <string>bean_863<\/string> 
+  <\/void> 
+ <\/object> 
+<\/java> 
+",
+formIndex:10000,
+location:"200,220",
+name:"bean_863",
+size:"250,50",
+typeid:12,
+usesUI:true,
+uuid:"919fd73b-3415-4ca6-bd85-aacd223754c8"
+},
+{
+dataProviderID:"book_id",
+formIndex:10500,
+location:"150,130",
+size:"80,20",
+typeid:4,
+uuid:"b0836667-5ba5-4b8e-9dcd-9a9c635d61de"
+},
+{
+dataProviderID:"pk",
+formIndex:10100,
+location:"150,70",
+size:"80,20",
+typeid:4,
+uuid:"cef8b7c5-5827-478e-aa1a-33f73719f1e3"
+},
+{
+formIndex:10200,
+location:"60,70",
+mediaOptions:14,
+size:"80,20",
+tabSeq:-1,
+text:"pk",
+transparent:true,
+typeid:7,
+uuid:"ffd423dc-172a-4ef3-a59e-5b68bcd2d9d5"
+}
+],
+name:"book_inleiding",
+paperPrintScale:100,
+size:"640,480",
+titleText:"Studiebijbel",
+typeid:3,
+uuid:"a0e18fbc-b8b2-44aa-89e5-3a98680b6908"

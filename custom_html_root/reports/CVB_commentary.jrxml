@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2016-12-14T10:01:17 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa938549-8c85-4902-b66b-2471fac099a4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sb"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="notesChk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="commentary_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(11)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\JasperReports\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="userID" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(11)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="myNotesChk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="languageParam" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     commentary_blocks."htmltext" AS commentary_blocks_htmltext,
+     books."book_name" AS books_book_name,
+     commentary_blocks."title" AS commentary_blocks_title,
+     commentary_blocks."chapter_from" AS commentary_blocks_chapter_from,
+     commentary_blocks."chapter_to" AS commentary_blocks_chapter_to,
+     commentary_blocks."verses_from" AS commentary_blocks_verses_from,
+     commentary_blocks."verses_to" AS commentary_blocks_verses_to
+FROM
+     sb.books INNER JOIN sb.commentary_blocks ON books.pk = commentary_blocks.book_id
+WHERE
+     commentary_blocks.pk = $P{commentary_id} AND commentary_blocks.Active_now = 1]]>
+	</queryString>
+	<field name="commentary_blocks_htmltext" class="java.lang.String"/>
+	<field name="books_book_name" class="java.lang.String"/>
+	<field name="commentary_blocks_title" class="java.lang.String"/>
+	<field name="commentary_blocks_chapter_from" class="java.lang.Integer"/>
+	<field name="commentary_blocks_chapter_to" class="java.lang.Integer"/>
+	<field name="commentary_blocks_verses_from" class="java.lang.Integer"/>
+	<field name="commentary_blocks_verses_to" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="68" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="555" height="14" uuid="ef3d30d4-615a-47bf-9d08-d9085808c35f"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Commentaar StudieBijbel.nl" : "Comentario BibliaDeEstudio.org" )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement x="0" y="20" width="260" height="13" uuid="a72d45f1-93f7-4d4c-a701-463c66ed6e34"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{books_book_name} + " " + $F{commentary_blocks_chapter_from} + ":" + $F{commentary_blocks_verses_from} + " - " + $F{commentary_blocks_chapter_to} + ":" + $F{commentary_blocks_verses_to}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="37" width="555" height="13" isPrintWhenDetailOverflows="true" uuid="04e5b3b5-272a-4174-939f-f468c4f153e9"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{commentary_blocks_title}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="53" width="555" height="13" uuid="05e72c24-3898-4c2e-b99e-abf911e0a54c"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{commentary_blocks_htmltext}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="34" splitType="Stretch">
+			<printWhenExpression><![CDATA[new Boolean($P{notesChk}.intValue() == 1)]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="21" width="555" height="13" uuid="01c6b574-477c-4d66-af8b-d8c6740cfe16"/>
+				<subreportParameter name="commentary_id">
+					<subreportParameterExpression><![CDATA[$P{commentary_id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "CVB_commentary_subreportNotes.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isBlankWhenNull="false">
+				<reportElement x="0" y="4" width="100" height="14" uuid="8126d2e6-c46b-41d8-bef3-a3b95b205dff"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Voetnoten" : "Notas al pie" )]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="53">
+			<printWhenExpression><![CDATA[new Boolean($P{myNotesChk}.intValue() == 1)]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="17" width="555" height="36" uuid="1a7a7dbe-3998-424f-86c7-392d548d229b"/>
+				<subreportParameter name="userID">
+					<subreportParameterExpression><![CDATA[$P{userID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="commentary_id">
+					<subreportParameterExpression><![CDATA[$P{commentary_id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "CVB_commentary_subreport_myNotes.jasper"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="0" y="3" width="100" height="14" uuid="bc3ad3f2-a05d-4f0c-988f-14a21b52baba"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Mijn notities" : "Mi nota es" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="8" width="555" height="14" uuid="d04d1fbd-c37d-4e33-bf3e-c633edb95a76"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "© 2016 Centrum voor Bijbelonderzoek, Postbus 139, 3940 AC Doorn, www.studiebijbel.nl" : "Comentario BibliaDeEstudio.org" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

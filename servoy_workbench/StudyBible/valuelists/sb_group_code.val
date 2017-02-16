@@ -1,0 +1,9 @@
+addEmptyValue:1,
+dataProviderID1:"group_name",
+dataProviderID2:"group_code",
+name:"sb_group_code",
+returnDataProviders:2,
+separator:" ",
+showDataProviders:1,
+typeid:34,
+uuid:"22EF6C2E-AC2A-44E4-B487-9BCFDC02A926"

@@ -1,0 +1,35 @@
+label.header {
+	text-align: center;
+	background-color: #7b004a;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+label.item {
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+label.headerText {
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 30px;	
+}
+
+label.subheader {
+	text-align: center;
+	color: #ffffff;
+	background-color:#b1b5bc;
+	font-size: 14px;
+}
+
+label.big_button {
+	background: #137795;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #ffffff;
+	font-size: 12px;
+	border: 1px solid #1e728c;
+}

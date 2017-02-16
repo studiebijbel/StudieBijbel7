@@ -1,0 +1,10 @@
+dataProviderID1:"verse_number",
+name:"testamentVerses",
+relationName:"global_chapter_id_to_verses",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:1,
+sortOptions:"verse_number asc",
+typeid:34,
+uuid:"8e0a9222-9d28-480d-ae7c-12ae1fcff597",
+valueListType:1

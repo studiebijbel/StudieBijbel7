@@ -1,0 +1,13 @@
+addEmptyValue:1,
+customValues:null,
+dataProviderID1:"pk",
+dataProviderID2:"code",
+dataProviderID3:"book",
+dataSource:"db:/sb/translation_books",
+name:"translations",
+relationName:null,
+returnDataProviders:1,
+showDataProviders:6,
+typeid:34,
+uuid:"5172BECC-BE02-43D3-A103-4DB32C5313A0",
+valueListType:1

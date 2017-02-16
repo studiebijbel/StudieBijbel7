@@ -1,0 +1,7 @@
+customValues:"i18n:cvb.wordstudy.WordStudy|Woordstudie
+i18n:cvb.wordstudy.WordForms|Woordvormen
+i18n:cvb.wordstudy.WordConcordance|Concordantie",
+name:"WordStudy",
+separator:" ",
+typeid:34,
+uuid:"ec24309b-b6eb-431b-a6f5-19df02acf326"

@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/sb/book_article",
+items:[
+{foreignColumnName:"article_id",primaryDataProviderID:"pk",typeid:23,uuid:"14EED243-BDC9-4E62-AAF5-16188478C6E2"}
+],
+name:"articles_to_book_article",
+primaryDataSource:"db:/sb/articles",
+typeid:22,
+uuid:"C3CB23CE-78F3-4645-96FD-32EFF89E87B1"

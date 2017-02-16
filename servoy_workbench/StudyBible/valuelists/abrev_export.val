@@ -1,0 +1,10 @@
+addEmptyValue:1,
+dataProviderID1:"code",
+dataSource:"db:/sb/translation_books",
+name:"abrev_export",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:1,
+typeid:34,
+uuid:"D86F1F74-C384-4661-8F3D-C51B959B9BE4",
+valueListType:1

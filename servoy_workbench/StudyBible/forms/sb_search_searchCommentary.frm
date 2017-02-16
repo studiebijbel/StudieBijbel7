@@ -1,0 +1,45 @@
+borderType:"EmptyBorder,0,0,0,0",
+dataSource:"db:/sb/commentary_blocks",
+items:[
+{
+anchors:11,
+background:"#ffffff",
+borderType:"SpecialMatteBorder,0.0,0.0,1.0,0.0,#000000,#000000,#000000,#000000,0.0,",
+displaysTags:true,
+fontType:"sansserif,0,11",
+formIndex:10000,
+horizontalAlignment:2,
+location:"15,5",
+mediaOptions:14,
+mnemonic:"",
+name:"BTN_openCommentary",
+onActionMethodID:"85313FD2-16AF-4F39-8B74-E78DDBFF8319",
+showClick:false,
+showFocus:false,
+size:"610,20",
+text:"<html>\r\
+  <head>\r\
+  <\/head>\r\
+  <body>\r\
+    %%titleOrfirstrow%%\r\
+  <\/body>\r\
+<\/html>",
+typeid:7,
+uuid:"11F2E162-0588-4195-B59F-7861095CA2B1"
+},
+{
+background:"#ffffff",
+height:29,
+partType:5,
+typeid:19,
+uuid:"6E52A465-A5A3-4DF5-A2DC-5A52F1C3CFDA"
+}
+],
+name:"sb_search_searchCommentary",
+namedFoundSet:"separate",
+paperPrintScale:100,
+scrollbars:33,
+size:"640,29",
+typeid:3,
+uuid:"EFFC22A3-0F1A-45EB-9A06-080C66A31584",
+view:3

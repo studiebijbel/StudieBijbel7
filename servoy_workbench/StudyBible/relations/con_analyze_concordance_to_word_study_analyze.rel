@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/word_study_analyze",
+items:[
+{foreignColumnName:"pk",operator:0,primaryDataProviderID:"analyze_id",typeid:23,uuid:"CA39FBC2-8699-4A2C-9A04-DF850FDB3A98"}
+],
+joinType:1,
+name:"con_analyze_concordance_to_word_study_analyze",
+primaryDataSource:"db:/sb/analyze_concordance",
+typeid:22,
+uuid:"89623858-FBE6-445A-A936-A79551BE45F4"

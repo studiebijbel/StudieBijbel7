@@ -1,0 +1,8 @@
+addEmptyValue:0,
+customValues:"i18n:cvb.testament.ot|Old\r
+NT|New",
+name:"testament_small",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"D289BF81-699B-4CE5-8BE0-AB91626B6A3B"

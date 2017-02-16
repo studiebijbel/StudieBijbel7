@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb_data/sb_contact_education",
+items:[
+{foreignColumnName:"sb_contact_id",primaryDataProviderID:"scopes.globals.sb_gCurrentUserID",typeid:23,uuid:"383B355F-7B25-48F3-BEB5-54D21BB766A8"}
+],
+joinType:1,
+name:"sb_gcurrentuserid_to_sb_contact_education",
+primaryDataSource:"db:/sb_data/sb_contact_education",
+typeid:22,
+uuid:"AFF444B2-E9B5-402E-A6A8-08E6B1C9125B"

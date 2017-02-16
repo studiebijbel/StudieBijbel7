@@ -1,0 +1,7 @@
+addEmptyValue:1,
+customValues:"i18n:cvb.lbl.male|1
+i18n:cvb.lbl.female|2",
+name:"sb_gender",
+separator:" ",
+typeid:34,
+uuid:"1E48833E-8C31-4D47-BD9B-392E360EF3A2"

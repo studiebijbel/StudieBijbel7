@@ -1,0 +1,12 @@
+addEmptyValue:0,
+dataProviderID1:"pk",
+dataProviderID2:"book_name",
+dataSource:"db:/sb/books",
+name:"sb_import_books",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:2,
+sortOptions:"pk asc",
+typeid:34,
+uuid:"DA05209D-75DD-46C5-8C3B-3F27CCBC2383",
+valueListType:1

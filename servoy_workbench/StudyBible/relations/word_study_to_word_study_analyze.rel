@@ -1,0 +1,8 @@
+foreignDataSource:"db:/sb/word_study_analyze",
+items:[
+{foreignColumnName:"word_study_id",primaryDataProviderID:"pk",typeid:23,uuid:"bcba728f-d19b-4b15-97ee-d35b7da401a9"}
+],
+name:"word_study_to_word_study_analyze",
+primaryDataSource:"db:/sb/word_study",
+typeid:22,
+uuid:"276bbe6e-8841-40c0-834b-4fd84c6f2fc8"

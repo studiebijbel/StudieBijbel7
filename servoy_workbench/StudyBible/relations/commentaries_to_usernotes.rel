@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/usernotes",
+items:[
+{foreignColumnName:"commentary_block_id",primaryDataProviderID:"scopes.globals.commentary_id",typeid:23,uuid:"53959525-0700-4668-88FE-D59595A01E5C"}
+],
+joinType:1,
+name:"commentaries_to_usernotes",
+primaryDataSource:"db:/sb/commentaries",
+typeid:22,
+uuid:"F0C99DF6-43B1-462C-9C35-44F9D1E083A8"

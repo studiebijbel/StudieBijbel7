@@ -1,0 +1,8 @@
+foreignDataSource:"db:/sb_data/sb_contact",
+items:[
+{foreignColumnName:"sb_contact_id",primaryDataProviderID:"globals.sb_gCurrentUserID",typeid:23,uuid:"DED7FCFC-3F4D-4318-BE80-CBF1104B4609"}
+],
+name:"sb_g_current_user",
+primaryDataSource:"db:/sb_data/sb_contact",
+typeid:22,
+uuid:"866CBE85-1B40-423C-99DE-09B67519E780"

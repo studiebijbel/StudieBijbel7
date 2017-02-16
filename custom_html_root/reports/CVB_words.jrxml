@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2016-12-14T10:42:33 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5b5b08de-1f27-41a7-9457-42d2f091a87d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="word_study_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="wordStudyChk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="wordFormsChk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="wordConcordanceChk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\JasperReports\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="word_strong" class="java.lang.String">
+		<defaultValueExpression><![CDATA["4886"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="word_study_analyze_pk" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1011341)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="languageParam" class="java.lang.Integer"/>
+	<parameter name="word_study_version_key" class="java.lang.String"/>
+	<parameter name="word_study_version_abbr" class="java.lang.String"/>
+	<parameter name="word_study_font" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     word_study.word_strong AS word_study_word_strong,
+     word_study.original AS word_study_original,
+     word_study.transliteration AS word_study_transliteration
+FROM
+     word_study
+WHERE
+     word_study.word_strong = $P{word_strong}
+AND  word_study.study_version = $P{word_study_version_key}]]>
+	</queryString>
+	<field name="word_study_word_strong" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="word_study_original" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="word_study_transliteration" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement positionType="Float" x="323" y="3" width="232" height="17" isPrintWhenDetailOverflows="true" uuid="f803c3d5-f909-4550-905c-4245a381b5df"/>
+				<textElement verticalAlignment="Bottom" markup="html">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{word_study_transliteration}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="0" y="2" width="100" height="18" isPrintWhenDetailOverflows="true" uuid="9d71b795-7cd8-4394-8126-71d1ac3104e3"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{word_study_word_strong}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="103" y="2" width="209" height="18" isPrintWhenDetailOverflows="true" forecolor="#000000" uuid="8007d62c-de50-4e20-a55c-7253c847e0ad"/>
+				<textElement verticalAlignment="Bottom" markup="html">
+					<font fontName="Arial Unicode MS" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<html><body><font face=\"" + $P{word_study_font} + "\">" + $F{word_study_original} + "</font></body></html>"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="44">
+			<printWhenExpression><![CDATA[new Boolean($P{wordStudyChk}.intValue() == 1)]]></printWhenExpression>
+			<subreport runToBottom="false">
+				<reportElement isPrintRepeatedValues="false" x="0" y="15" width="555" height="29" uuid="8b98198f-c4b6-4b59-9c34-4618b50361bc"/>
+				<subreportParameter name="word_study_version_key">
+					<subreportParameterExpression><![CDATA[$P{word_study_version_key}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="word_strong">
+					<subreportParameterExpression><![CDATA[$P{word_strong}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "CVB_words_WordStudySubReport.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isBlankWhenNull="false">
+				<reportElement x="0" y="0" width="141" height="14" uuid="745e75f3-befd-4f7d-acab-7352e75c6503"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Woordstudie" : "Diccionario" )]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement x="414" y="1" width="141" height="14" uuid="d4e83d05-0f62-4ef4-ab8c-db9f098857d8"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{word_study_version_abbr}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="35">
+			<printWhenExpression><![CDATA[new Boolean($P{wordFormsChk}.intValue() == 1)]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="15" width="555" height="13" uuid="5a88c1ec-ac26-4065-8b2c-19e17559dfb4"/>
+				<subreportParameter name="word_study_id">
+					<subreportParameterExpression><![CDATA[$P{word_study_id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "CVB_words_WordFormsSubReport.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isBlankWhenNull="false">
+				<reportElement x="0" y="0" width="141" height="14" uuid="0e82fd1e-7681-4f71-a1f9-91e6c8fe6f70"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Woordvormen" : "Formas de la palabra" )]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="27" splitType="Stretch">
+			<printWhenExpression><![CDATA[new Boolean($P{wordConcordanceChk}.intValue() == 1)]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="13" width="555" height="13" uuid="a139f284-c6c4-4ff1-841a-f89fa106ab13"/>
+				<subreportParameter name="word_study">
+					<subreportParameterExpression><![CDATA[$P{word_study_id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "CVB_wordConcordanceSubReport.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="141" height="14" uuid="ef7e1757-9078-4742-a15c-9c79354ac595"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "Concordantie" : "Concordancia" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="8" width="555" height="14" uuid="42ac26fc-530d-4a1e-83e5-d319f277de5e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Unicode MS" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{languageParam}.intValue() < 1 ? "© 2016 Centrum voor Bijbelonderzoek, Postbus 139, 3940 AC Doorn, www.studiebijbel.nl" : "Comentario BibliaDeEstudio.org" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

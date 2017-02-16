@@ -1,0 +1,13 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/sb/commentary_blocks",
+items:[
+{foreignColumnName:"verses_from",operator:3,primaryDataProviderID:"globals.verse",typeid:23,uuid:"6159f95d-d60e-4a15-8934-0b57be520554"},
+{foreignColumnName:"chapter_from",operator:3,primaryDataProviderID:"globals.chapter",typeid:23,uuid:"6c6327ca-8d85-47f9-b29f-5f282087aeae"},
+{foreignColumnName:"chapter_to",operator:4,primaryDataProviderID:"globals.chapter",typeid:23,uuid:"88119c4c-8f75-4c5b-b0c1-01448b69dda8"},
+{foreignColumnName:"verses_to",operator:4,primaryDataProviderID:"globals.verse",typeid:23,uuid:"8d3e228a-e1bb-4ebe-8161-dbdea061da27"},
+{foreignColumnName:"book_id",primaryDataProviderID:"globals.book_id",typeid:23,uuid:"9bbb649b-0960-47f2-8ee8-82258afc88c5"}
+],
+name:"globals_commentary_to_commentary_blocks",
+primaryDataSource:"db:/sb/one",
+typeid:22,
+uuid:"393e7a11-3d69-4810-9393-afeb6817eae3"

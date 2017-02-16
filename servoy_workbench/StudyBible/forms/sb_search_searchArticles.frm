@@ -1,0 +1,44 @@
+borderType:"EmptyBorder,0,0,0,0",
+dataSource:"db:/sb/articles",
+items:[
+{
+anchors:11,
+background:"#ffffff",
+borderType:"SpecialMatteBorder,0.0,0.0,1.0,0.0,#000000,#000000,#000000,#000000,0.0,",
+displaysTags:true,
+formIndex:10000,
+horizontalAlignment:2,
+location:"20,20",
+mediaOptions:14,
+name:"btn_openArticle",
+onActionMethodID:"02ED7709-06A7-4366-BCBC-6EBC0D694171",
+showClick:false,
+showFocus:false,
+size:"600,20",
+text:"<html>\r
+  <head>\r
+  <\/head>\r
+  <body>\r
+%%search_filename%%\r
+  <\/body>\r
+<\/html>\r
+",
+typeid:7,
+uuid:"BDCCA10A-0FE0-4978-BE8A-510E6471ACD5"
+},
+{
+background:"#ffffff",
+height:60,
+partType:5,
+typeid:19,
+uuid:"E5732DD3-E3DB-4689-B06A-E1BD93C44535"
+}
+],
+name:"sb_search_searchArticles",
+namedFoundSet:"separate",
+paperPrintScale:100,
+scrollbars:33,
+size:"640,60",
+typeid:3,
+uuid:"49277A6E-162A-40D6-BBF4-50E4A7F0E415",
+view:3

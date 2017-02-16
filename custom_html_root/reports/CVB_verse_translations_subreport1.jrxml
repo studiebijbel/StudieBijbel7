@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CVB_verse_translations_subreport1" pageWidth="555" pageHeight="802" columnWidth="535" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="verse_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer(1000001)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="selectedTranslations" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     translation_books.code AS translation_books_code,
+     verse_translations.transl_text AS verse_translations_transl_text,
+     books.book_name AS books_book_name,
+     chapters.chapter_no AS chapters_chapter_no,
+     verses.verse_number AS verses_verse_number
+FROM
+     translation_books INNER JOIN verse_translations ON translation_books.pk = verse_translations.translation_book_id
+     INNER JOIN verses ON verse_translations.verse_id = verses.pk
+     INNER JOIN chapters ON verses.chapter_id = chapters.pk
+     INNER JOIN books ON chapters.book_id = books.pk
+WHERE
+     verse_translations.verse_id = $P{verse_id}
+ORDER BY
+     translation_books.nt_order ASC]]>
+	</queryString>
+	<field name="translation_books_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="verse_translations_transl_text" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="books_book_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="chapters_chapter_no" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="verses_verse_number" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="book_name" class="java.lang.String">
+		<variableExpression><![CDATA[$F{books_book_name} + " " + $F{chapters_chapter_no} + ":" + $F{verses_verse_number}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="42" y="0" width="513" height="13"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS" pdfFontName="" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{verse_translations_transl_text}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="42" height="13"/>
+				<textElement markup="html">
+					<font fontName="Arial Unicode MS" pdfFontName="" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{translation_books_code}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+deleteRelatedRecords:true,
+foreignDataSource:"db:/sb/book_inleiding",
+items:[
+{foreignColumnName:"article_id",primaryDataProviderID:"pk",typeid:23,uuid:"B95B6A59-0DCB-43C0-A6D6-D9F04372E1EC"}
+],
+name:"articles_to_book_inleiding",
+primaryDataSource:"db:/sb/articles",
+typeid:22,
+uuid:"8D9D83CC-129F-4014-BB82-C5042DEFEB28"

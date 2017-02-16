@@ -1,0 +1,10 @@
+addEmptyValue:1,
+dataProviderID1:"verse_number",
+name:"verses",
+relationName:"global_chapter_id_to_verses",
+returnDataProviders:1,
+separator:" ",
+showDataProviders:1,
+typeid:34,
+uuid:"f61a48b1-305a-4823-90e9-cab0c8f261cc",
+valueListType:1

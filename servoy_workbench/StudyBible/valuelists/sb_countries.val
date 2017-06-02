@@ -1,0 +1,10 @@
+addEmptyValue:1,
+dataProviderID1:"country_name",
+dataProviderID2:"country_code",
+dataSource:"db:/sb_data/sb_countries",
+name:"sb_countries",
+returnDataProviders:2,
+showDataProviders:1,
+typeid:34,
+uuid:"D6354614-751D-47C0-95F2-52703497A8C2",
+valueListType:1

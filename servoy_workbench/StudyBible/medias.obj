@@ -1200,6 +1200,13 @@ uuid:"F5D6F88B-DCC2-4E07-B21D-DBF443E314FD"
 },
 {
 encapsulation:0,
+mimeType:"image/png",
+name:"StudieBijbel_Online_logo@2x.png",
+typeid:37,
+uuid:"244D4AAD-999B-40F1-85EA-95F01789B772"
+},
+{
+encapsulation:0,
 mimeType:"application/pdf",
 name:"synopsis-bookmarks_totaal.pdf",
 typeid:37,

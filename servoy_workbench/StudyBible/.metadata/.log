@@ -1,0 +1,72 @@
+!SESSION 2011-05-19 13:32:56.047 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2011-05-19 13:33:39.122
+!MESSAGE Unable to find Action Set: org.eclipse.ui.externaltools.ExternalToolsSet
+
+!ENTRY com.servoy.eclipse.model 1 0 2011-05-19 13:33:41.091
+!MESSAGE Cannot find any valid solution to activate.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-05-19 13:33:43.700
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-05-19 13:33:43.700
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1220fd1),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1220fd1)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1220fd1),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1220fd1)),sourcePriority=16640)
+
+!ENTRY org.eclipse.ui 4 4 2011-05-19 13:34:13.027
+!MESSAGE Invalid preference page path: HTML Syntax
+!SESSION 2011-05-19 13:34:15.417 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.servoy.eclipse.model 1 0 2011-05-19 13:34:28.261
+!MESSAGE Cannot find any valid solution to activate.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-05-19 13:34:29.167
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-05-19 13:34:29.167
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1d6c336),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1d6c336)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1d6c336),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1d6c336)),sourcePriority=16640)
+
+!ENTRY org.eclipse.ui 4 4 2011-05-19 13:35:01.555
+!MESSAGE Invalid preference page path: HTML Syntax
+!SESSION 2011-05-19 13:37:19.067 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\servoy6\servoy6_workspace\StudyBible
+
+!ENTRY com.servoy.eclipse.model 1 0 2011-05-19 13:37:31.362
+!MESSAGE Cannot find any valid solution to activate.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-05-19 13:37:31.987
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-05-19 13:37:31.987
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@99ff91),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@99ff91)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@99ff91),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@99ff91)),sourcePriority=16640)
+
+!ENTRY org.eclipse.ui 4 4 2011-05-19 13:37:52.640
+!MESSAGE Invalid preference page path: HTML Syntax

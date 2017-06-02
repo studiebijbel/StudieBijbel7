@@ -2287,17 +2287,18 @@ function onClose() {
  */
 function openAbout() {
 	var vDate = new Date()
+	var SB = new scopes.StudyBible.StudieBijbel();
+
 	if (i18n.getCurrentLanguage() == 'es') {
-		globals.about = '<html><body><p align="center"><img src="media:///newui/BibliaDeEstudio_logo_648x72.png"/><br /><br />';
-		
-		var SB = new scopes.StudyBible.StudieBijbel();
-		globals.about += SB.SendMail('app_about', 56, {AppVersion:globals.sb_gVersion}, null, true);
-		
+		globals.about = '<html><body><p align="center"><img src="media:///newui/BibliaDeEstudio_logo_648x72.png"/><br /><br />';	
 	//	globals.about += '<table><tr><td>© Comentario Bíblico del CVB: la fundación Centro de Investigación Bíblica http:\/\/www.comentariobiblilcocvb.com, Stichting Centrum voor Bijbelonderzoek, http:\/\/www.studiebijbel.nl Todos los derechos reservados</td></tr><tr><td>En el Comentario Bíblico del CvB se utiliza una serie de traducciones de la Biblia, entre otras las mencionadas a continuación. Para éstas se aplican los siguientes derechos:<br/><br/></td></tr></table><table><tr><td>La Palabra 2010</td><td>Versión Texto bíblico: La Palabra 2010 ® <br />© Sociedad Bíblica, http:\/\/sociedadbiblica.org <br />Todos los derechos reservados</td></tr><tr><td>Reina Valera 1995</td><td>Versión Texto bíblico: Reina-Valera 95 ® <br />© United Bible Societies Association, Inc., 1995. <br />Todos los derechos reservados http:\/\/www.biblesociety.org</td></tr><tr><td>Reina Valera 1960</td><td>El texto Bíblico ha sido tomado de la versión Reina-Valera © 1960 Sociedades Bíblicas en América Latina; © renovado 1988 Sociedades Bíblicas Unidas. Utilizado con permiso. http:\/\/www.americanbible.org y http:\/\/www.bibles.com <br/>Reina-Valera 1960™ es una marca registrada de la American Bible Society, y puede ser usada solamente bajo licencia.</td></tr><tr><td>Nueva Biblia Latinoamericana de Hoy</td><td>Nueva Biblia Latinoamericana de Hoy Copyright © 2005 by The Lockman Foundation, La Habra, Calif.  All rights reserved.<br/>For Permission to Quote Information visit http:\/\/www.lockman.org </td></tr><tr><td>Biblia Hebraica Stuttgartensia</td><td>Biblia Hebraica Stuttgartensia, edited by Karl Elliger and Wilhelm Rudolph, Fifth Revised Edition, edited by Adrian Schenker, © 1977 and 1997 Deutsche Bibelgesellschaft, Stuttgart. Used by permission.</td></tr></table>'
 	} else {
-		globals.about = '<html><body><p align="center"><img src="media:///newui/StudieBijbel_nl-white-320x70.png"/><br /><br /><b><br>Studiebijbel - Internetversie ' + globals.sb_gVersion
-		globals.about += '<br> Copyright &#169;' + vDate.getFullYear() + ' Centrum voor Bijbelonderzoek<br>Postbus 139, 3940 AC<br>Doorn.<br>Email: info@studiebijbel.nl</b><br> <br> Nieuwe Vertaling NBG 1951, herziene druk <br>Copyright Nederlands Bijbelgenootschap, 1951/2000 <br><br>Statenvertaling, editie 1977, herziene uitgave<br>Copyright Nederlands Bijbelgenootschap, Haarlem 1997<br><br>Groot Nieuws Bijbel, herziene editie<br>Copyright Nederlands Bijbelgenootschap / Katholieke Bijbelstichting, 1982/1996<br><br>De Nieuwe Bijbelvertaling<br>Copyright Nederlands Bijbelgenootschap, 2004/2007<br><br>De Naardense Bijbel<br>Copyright uitgeverij Skandalon, 2004 </p></body></html>';
+		globals.about = '<html><body><p align="center"><img src="media:///newui/StudieBijbel_nl-white-320x70.png"/><br /><br />';
+//		globals.about += '<br> Copyright &#169;' + vDate.getFullYear() + ' Centrum voor Bijbelonderzoek<br>Postbus 139, 3940 AC<br>Doorn.<br>Email: info@studiebijbel.nl</b><br> <br> Nieuwe Vertaling NBG 1951, herziene druk <br>Copyright Nederlands Bijbelgenootschap, 1951/2000 <br><br>Statenvertaling, editie 1977, herziene uitgave<br>Copyright Nederlands Bijbelgenootschap, Haarlem 1997<br><br>Groot Nieuws Bijbel, herziene editie<br>Copyright Nederlands Bijbelgenootschap / Katholieke Bijbelstichting, 1982/1996<br><br>De Nieuwe Bijbelvertaling<br>Copyright Nederlands Bijbelgenootschap, 2004/2007<br><br>De Naardense Bijbel<br>Copyright uitgeverij Skandalon, 2004 </p></body></html>';
 	}
+	globals.about += SB.SendMail('app_about', 56, {AppVersion:globals.sb_gVersion}, null, true);
+
+	
 	//application.showFormInDialog(forms.about, -1, -1, -1, -1, 'i18n:servoy.menuitem.about', false, false, 'about', true)
 	//SMM 20-05-2011
 

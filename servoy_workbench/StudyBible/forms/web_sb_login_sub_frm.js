@@ -66,18 +66,24 @@ function EVENT_onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"CA6BC072-5977-4E3A-B9A1-A99BF05540E9"}
  */
 function SetStyles() {
-	plugins.WebClientUtils.setExtraCssClass(elements.el_container, "cvb-login-form");
+//	plugins.WebClientUtils.setExtraCssClass(elements.el_container, "cvb-login-form");
 	
-	plugins.WebClientUtils.setExtraCssClass(elements.btn_login, "cvb-login-button");
+	plugins.WebClientUtils.setExtraCssClass(elements.infoblock,"cvb-new-login-block cvb-new-login-info");
+	plugins.WebClientUtils.setExtraCssClass(elements.el_container,"cvb-new-login-block cvb-new-login-content");
+	
+	plugins.WebClientUtils.setExtraCssClass(elements.btn_login, "cvb-login-button cvb-login-button-blue");
 	
 	plugins.WebClientUtils.setExtraCssClass(elements.txt_head, "cvb-login-txt-head");
 	plugins.WebClientUtils.setExtraCssClass(elements.txt_container,"cvb-login-txt-container");
-	plugins.WebClientUtils.setExtraCssClass(elements.username,"cvb-login-input");
-	plugins.WebClientUtils.setExtraCssClass(elements.password,"cvb-login-input");
+	plugins.WebClientUtils.setExtraCssClass(elements.username,"cvb-login-input cvb-login-input-first");
+	plugins.WebClientUtils.setExtraCssClass(elements.password,"cvb-login-input cvb-login-input-last");
 //	plugins.WebClientUtils.setExtraCssClass(elements.organisation,"cvb-login-input");
 	plugins.WebClientUtils.setExtraCssClass(elements.txt_copyright,"cvb-login-footer");
 	plugins.WebClientUtils.setExtraCssClass(elements.txt_version,"cvb-login-footer");
 	plugins.WebClientUtils.setExtraCssClass(elements.btn_lostpassword, "cvb-login-lostpassword");
+	plugins.WebClientUtils.setExtraCssClass(elements.btn_register, "cvb-login-button cvb-login-button-green");
+	plugins.WebClientUtils.setExtraCssClass(elements.noaccount,"cvb-no-account");
+
 }
 /**
  * Perform the element default action.
@@ -102,7 +108,7 @@ function BTN_login(event) {
  * @properties={typeid:24,uuid:"C2F2943C-A025-4A2E-9886-DD311FB7671E"}
  */
 function OpenRegister() {
-	scopes.tools.output("Register button pressed!");
+	forms.web_sb_login_frm.elements.tabless.tabIndex = 5;
 }
 /**
  * Perform the element default action.

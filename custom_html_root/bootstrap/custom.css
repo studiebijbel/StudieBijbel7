@@ -1,6 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic);
 @import url(//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 @charset "utf-8";
 
@@ -440,11 +440,16 @@ div.wicket-modal div.w_caption {
 /* Login Form */
 body div.tabpanel.cvb-login-container {
 	width: 720px !important;
-	height: 400px !important;
+/*	height: 400px !important;*/
 	left:50% !important;
 	top:50% !important;
 	margin-left: -360px !important;
 	margin-top: -200px !important;
+}
+
+body div.tabpanel.cvb-login-container  h1 {
+	font-weight: bold;
+	font-family: 'Merriweather Sans', sans-serif !important;
 }
 
 .field-error {
@@ -474,18 +479,73 @@ body .cvb-login-button {
 	font-weight: bold !important;
 	font-size: 30px !important;
 	text-align: center !important;
-	border-radius: 2px;
+	border-radius: 6px;
 	cursor: pointer !important;
+	transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 body .cvb-login-button:hover {
 	background-color: rgb(89,146,177);
 }
 
+body .cvb-login-button.cvb-login-button-blue {
+	background-color: #07517A !important;
+}
+
+body .cvb-login-button.cvb-login-button-blue:hover {
+	background-color: #397289 !important;
+}
+
+body .cvb-register-portal span {
+	background-color: white !important;
+	border-radius: 2px;
+	padding: 10px !important;
+	font-size: 12px !important;
+}
+
+body .cvb-register-portal span table tr td {
+	font-size: 11px !important;
+	text-align:left;
+	padding-left: 20px;
+	color: #A5A5A5;
+	padding-bottom: 0px !important;
+}
+
+body .cvb-register-portal span table tr td:first-child {
+	font-size: 11px !important;
+	text-align:right;
+	width: 120px;
+	padding-left: 0px;
+	color: #424D5C;
+	font-weight: bold;
+}
+
+
+
+body .cvb-login-button.cvb-login-button-green {
+	background-color: #1AB394 !important;
+}
+
+body .cvb-login-button.cvb-login-button-green:hover {
+	background-color: #019A7B !important;
+}
+
+body .cvb-login-button.cvb-login-button-transparent {
+	background-color: transparent !important;
+	color: #1AB394 !important;
+	font-weight: normal !important;
+}
+
+body .cvb-login-button.cvb-login-button-transparent:hover {
+	background-color: transparent !important;
+	color: #019A7B !important;
+}
+
+
 /* Remind me button */
 body .cvb-remindme {
 /*	background-color: rgb(248,248,255); *//*rgb(124,169,194);*/
-	color: rgb(124,169,194) !important;
+	color: #1AB394 !important;
 	font-family: 'Merriweather Sans', sans-serif !important;
 	font-weight: 100;
 	font-size: 11px !important;
@@ -517,21 +577,76 @@ body .cvb-remindme.cvb-password-saved span.cvb-remind-icon:before {
 }
 
 /* END */
+
+/* CVB TERMS CONTAINER */
+
+body .cvb-terms-container {
+	background-color: #F3F3F4;
+	color: #333;
+}
+
+
+/* END */
+
+
+body .cvb-no-account {
+	color: #07517A !important;
+	font-size: 12px !important;
+}
+
+body .cvb-no-account span {
+	font-size: 12px !important;
+}
+
+body .cvb-voucher-info span {
+	font-size: 10px !important;
+	color: #333;
+}
+
+body .cvb-agreement-label span {
+	color: #666666;
+	font-size: 10px !important;
+	margin-left: 15px;
+}
+
 body .cvb-login-input {
 	border-radius: 2px !important;
 	padding-left: 10px !important;
 	padding-right: 10px !important;
+	color: #A9A9A9 !important;
+}
+
+body select.cvb-login-input {
+	border: 1px solid #E8EAEB !important;
+	width: 317px !important;
+}
+
+body .cvb-login-input.calendar {
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+body .cvb-login-input-first {
+	border-top-right-radius: 10px !important;
+	border-top-left-radius: 10px !important;
+}
+
+body .cvb-login-input-last {
+	border-bottom-right-radius: 10px !important;
+	border-bottom-left-radius: 10px !important;
 }
 
 body .cvb-login-txt-head > span {
 	font-size: 19px !important;
 	font-weight: bold;
+	color: #003761;
 }
 
 body .cvb-login-txt-container > span,
 body .cvb-login-txt-container > span strong {
 	font-size: 16px !important;
 	line-height: 24px;
+	color: #003761;
 }
 
 body .cvb-login-footer {
@@ -544,7 +659,6 @@ body .cvb-login-footer span {
 
 body .cvb-login-lostpassword {
 	color: rgb(124,169,194) !important;
-	font-weight: bold !important;
 }
 
 body .cvb-login-lostpassword:hover {
@@ -755,4 +869,26 @@ body .cvb-size-font table td {
 .cvb-mobile-logo {
 	width: 100%;
 	
+}
+
+.cvb-new-login-block {
+	border: 4px solid white;
+}
+
+.cvb-new-login-info {
+
+}
+
+.cvb-infocontent {
+	color: #003761 !important;
+}
+
+.cvb-infocontent h1 {
+	color: #003761 !important;
+	font-family: 'Merriweather Sans', sans-serif !important;
+	font-weight: bold;
+}
+
+.cvb-new-login-content {
+	background-color: #DEEAED;
 }

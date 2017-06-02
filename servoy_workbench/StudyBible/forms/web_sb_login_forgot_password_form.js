@@ -55,7 +55,7 @@ var v_cardholder = null;
 function EVENT_onShow(firstShow, event) {
 
 	
-	elements.iban.requestFocus();
+	elements.email.requestFocus();
 
 	/** @type {JSFoundSet<db:/sb_data/sb_subscriptions>} */
 	var vFS = databaseManager.getFoundSet('sb_data', 'sb_subscriptions');
@@ -72,18 +72,22 @@ function EVENT_onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"D38D371F-5CA9-49E1-B977-A4317695ADC3"}
  */
 function SetStyles() {
-	plugins.WebClientUtils.setExtraCssClass(elements.el_container, "cvb-login-form");
-	plugins.WebClientUtils.setExtraCssClass(elements.btn_login, "cvb-login-button");
-//	plugins.WebClientUtils.setExtraCssClass(elements.txt_head, "cvb-login-txt-head");
-	plugins.WebClientUtils.setExtraCssClass(elements.txt_container,"cvb-login-txt-container");
-	plugins.WebClientUtils.setExtraCssClass(elements.iban,"cvb-login-input");
-	plugins.WebClientUtils.setExtraCssClass(elements.cardholder,"cvb-login-input");
-
+	plugins.WebClientUtils.setExtraCssClass(elements.btn_login, "cvb-login-button cvb-login-button-blue");
+	plugins.WebClientUtils.setExtraCssClass(elements.btn_back, "cvb-login-button cvb-login-button-transparent");
+	
 //	plugins.WebClientUtils.setExtraCssClass(elements.password,"cvb-login-input");
 //	plugins.WebClientUtils.setExtraCssClass(elements.organisation,"cvb-login-input");
 	plugins.WebClientUtils.setExtraCssClass(elements.txt_copyright,"cvb-login-footer");
 	plugins.WebClientUtils.setExtraCssClass(elements.txt_version,"cvb-login-footer");
 //	plugins.WebClientUtils.setExtraCssClass(elements.btn_lostpassword, "cvb-login-lostpassword");
+
+	plugins.WebClientUtils.setExtraCssClass(elements.infoblock,"cvb-new-login-block cvb-new-login-info");
+	plugins.WebClientUtils.setExtraCssClass(elements.contentblock,"cvb-new-login-block cvb-new-login-content");
+	
+	
+	plugins.WebClientUtils.setExtraCssClass(elements.email,"cvb-login-input cvb-login-input-first cvb-login-input-last");
+	plugins.WebClientUtils.setExtraCssClass(elements.infocontent, 'cvb-infocontent');
+	
 }
 
 /**
@@ -102,10 +106,25 @@ function BTN_register(event) {
 	if(vFS.getSize() == 1) {
 		var SB = new scopes.StudyBible.StudieBijbel();
 		SB.LostPassword(v_email);
-		globals.DIALOGS.showInfoDialog("Info", "i18n:cvb.message.passwordForgetInstructions", "Ok");
-		forms.web_sb_login_frm.EVENT_changeTab('login');
+		//globals.DIALOGS.showInfoDialog("Info", "i18n:cvb.message.passwordForgetInstructions", "Ok");
+		//forms.web_sb_login_frm.EVENT_changeTab('login');
+		
+		
+		forms.web_sb_login_message_frm.v_title = i18n.getI18NMessage("cvb.lbl.lost_password_success_title");
+		forms.web_sb_login_message_frm.v_message = i18n.getI18NMessage("cvb.lbl.lost_password_success_message");
+		
+		forms.web_sb_login_message_frm.v_callback = function () {
+			forms.web_sb_login_frm.elements.tabless.tabIndex = 1;
+		}
+		forms.web_sb_login_frm.elements.tabless.tabIndex = 9;
 	} else {
-		globals.DIALOGS.showErrorDialog("i18n:cvb.message.error","i18n:cvb.message.noSuchEmailaddress", "Ok");
+		forms.web_sb_login_message_frm.v_title = i18n.getI18NMessage("i18n:cvb.message.error");
+		forms.web_sb_login_message_frm.v_message = i18n.getI18NMessage("i18n:cvb.message.noSuchEmailaddress");
+		
+		forms.web_sb_login_message_frm.v_callback = function () {
+			forms.web_sb_login_frm.elements.tabless.tabIndex = 1;
+		}
+		forms.web_sb_login_frm.elements.tabless.tabIndex = 9;
 	}
 }
 
@@ -129,4 +148,16 @@ function EVENT_validateForm() {
 	}
 	
 	return (vErrors==0)?true:false;
+}
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @properties={typeid:24,uuid:"9ABB144E-327C-455D-8B24-20DCBE2826F2"}
+ */
+function BTN_cantel(event) {
+	
+	forms.web_sb_login_frm.elements.tabless.tabIndex = 1;
 }

@@ -20,3 +20,30 @@ function BTN_new()
 var vRecord = foundset.getRecord(foundset.newRecord());
 databaseManager.saveData(vRecord);
 }
+
+/**
+ * Handle changed data.
+ *
+ * @param {Number} oldValue old value
+ * @param {Number} newValue new value
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @returns {Boolean}
+ *
+ * @properties={typeid:24,uuid:"5759758A-5660-4EF5-9F78-D4D7808C6EC5"}
+ */
+function EVENT_setDefault(oldValue, newValue, event) {
+	
+	var vSelectedRecord = foundset.getSelectedRecord();
+	
+	for(var i = 1; i <= foundset.getSize(); i++) {
+		var vRecord = foundset.getRecord(i);
+		vRecord.default_book = 0;
+	}
+	
+	vSelectedRecord.default_book = 1;
+	
+	databaseManager.saveData(foundset);
+	
+	return true
+}

@@ -1,0 +1,10 @@
+addEmptyValue:1,
+customValues:"i18n:cvb.knowus.how|-1\r\
+i18n:cvb.knowus.searchengine|i18n:cvb.knowus.searchengine\r\
+i18n:cvb.knowus.friend|i18n:cvb.knowus.friend\r\
+i18n:cvb.knowus.collegue|i18n:cvb.knowus.collegue\r\
+i18n:cvb.knowus.advertisment|i18n:cvb.knowus.advertisment\r\
+i18n:cvb.knowus.other|i18n:cvb.knowus.other",
+name:"knowus",
+typeid:34,
+uuid:"2C25B959-540B-4A28-8FB7-071840746B63"

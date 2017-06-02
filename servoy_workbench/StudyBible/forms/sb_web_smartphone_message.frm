@@ -9,8 +9,12 @@ uuid:"2B752940-91F8-482D-A7DD-D1FE16F354EA"
 {
 anchors:15,
 formIndex:4,
+horizontalAlignment:0,
 imageMediaID:"D074B709-24F9-4C01-886F-B977ACFEEAC1",
 location:"0,0",
+onActionMethodID:"ADBF0088-7B1A-4F2C-8231-5A5295E077A3",
+showClick:false,
+showFocus:false,
 size:"320,534",
 text:"",
 transparent:true,

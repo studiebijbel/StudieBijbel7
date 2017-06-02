@@ -111,6 +111,7 @@ function BTN_beheer(event) {
 	popupMenu.addMenuItem('Server management', BTN_serverMan)
 	popupMenu.addMenuItem('Email Template Beheer', BTN_mailTemplates)
 	popupMenu.addMenuItem('Woordstudie Conversie Tool', BTN_wsConvert);
+	popupMenu.addMenuItem('Landen', BTN_countries);
 	if (event instanceof JSEvent) {
 		elem = event.getElementName()
 		popupMenu.show(elements[elem]);
@@ -141,6 +142,16 @@ function BTN_beheer(event) {
 	 }
 	 */
 
+}
+
+/**
+ * @properties={typeid:24,uuid:"FD74B225-76F0-4678-99A6-36F82AD58BB9"}
+ */
+function BTN_countries() {
+	var vWindow = application.createWindow('Landen beheer', JSWindow.MODAL_DIALOG);
+	vWindow.setInitialBounds(-1, -1, -1, -1);
+	vWindow.title = "Landen beheer"
+	vWindow.show(forms.sb_countries_dlg);
 }
 
 /**
@@ -662,9 +673,9 @@ function load() {
 		globals.chapter = 3;
 		globals.verse = 1;
 	} else {
-		globals.sb_gTestament = "Old"
+		globals.sb_gTestament = ((globals.sb_APP_getServerLang() == "ESP")?"New":"Old");
 		//	var vSQL = "SELECT FIRST(books.book_name) FROM DBA.books WHERE books.testament = 'OLD' AND books.show_in_nav = 1 ORDER BY books.order_number"
-		var vSQL = "SELECT books.book_name FROM books WHERE books.testament = 'Old' AND books.show_in_nav = 1 ORDER BY books.order_number"
+		var vSQL = "SELECT books.book_name FROM books WHERE books.testament = '" + globals.sb_gTestament + "' AND books.show_in_nav = 1 ORDER BY books.order_number"
 
 		var vQuery = databaseManager.getDataSetByQuery('SB', vSQL, null, 1)
 		var vBook = vQuery.getValue(1, 1)

@@ -123,3 +123,15 @@ function EVENT_changeTab(method) {
 function onAction(event) {
 	plugins.dialogs.showInfoDialog("Info", application.getServerURL());
 }
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @properties={typeid:24,uuid:"17A3580B-97F0-49E8-AA4B-CB214AA5E5CB"}
+ */
+function BTN_reg(event) {
+
+	elements.tabless.tabIndex = 5;
+}

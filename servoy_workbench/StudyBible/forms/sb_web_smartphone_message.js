@@ -12,3 +12,16 @@ function BTN_Classes(event) {
 	plugins.WebClientUtils.setExtraCssClass(elements.content, "cvb-mobile-center cvb-mobile-message");
 	plugins.WebClientUtils.setExtraCssClass(elements.cvb_logo, "cvb-mobile-center cvb-mobile-logo");
 }
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"ADBF0088-7B1A-4F2C-8231-5A5295E077A3"}
+ */
+function EVENT_clickSplash(event) {
+	application.showURL("https://www.studiebijbel.nl", "_self");
+}

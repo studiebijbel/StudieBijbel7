@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aliases>
+  <alias auto-logon="true" connect-at-startup="false" driver-id="" has-no-user-name="false">
+    <name>sb</name>
+    <url>jdbc:postgresql://localhost:5432/sb</url>
+    <folder-filter-expression></folder-filter-expression>
+    <name-filter-expression></name-filter-expression>
+    <schema-filter-expression></schema-filter-expression>
+    <users>
+      <user auto-commit="false" commit-on-close="false">
+        <user-name>DBA</user-name>
+        <password></password>
+      </user>
+    </users>
+    <default-user>DBA</default-user>
+  </alias>
+  <alias auto-logon="true" connect-at-startup="false" driver-id="" has-no-user-name="false">
+    <name>sb_data</name>
+    <url>jdbc:postgresql://localhost:5432/sb_data</url>
+    <folder-filter-expression></folder-filter-expression>
+    <name-filter-expression></name-filter-expression>
+    <schema-filter-expression></schema-filter-expression>
+    <users>
+      <user auto-commit="false" commit-on-close="false">
+        <user-name>DBA</user-name>
+        <password></password>
+      </user>
+    </users>
+    <default-user>DBA</default-user>
+  </alias>
+</aliases>

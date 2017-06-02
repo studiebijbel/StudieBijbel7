@@ -1,0 +1,7 @@
+addEmptyValue:1,
+customValues:"Aanhef|-1\r\
+i18n:cvb.salutation.sir|0\r\
+i18n:cvb.salutation.madam|1",
+name:"salutation",
+typeid:34,
+uuid:"859BFE24-8362-4C6D-B911-0B8704EA8E9C"

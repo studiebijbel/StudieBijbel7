@@ -101,13 +101,26 @@ function nextVerse(event) {
  */
 function onShow(firstShow, event) {
 
-	if(globals.sb_APP_getServerLang()== "nl")
-	{
-		fv_version = {code:'NBG', pk:'1000002', book:'Nederlands Bijbel Genootschap 1951'};
-		fv_version_display = 'NBG';
+	// Get default booktranslation
+	var vSQL = "SELECT * FROM translation_books WHERE default_book = ?";
+	var vDS = databaseManager.getDataSetByQuery("sb", vSQL, [1], 1);
+	
+	if(vDS.getMaxRowIndex() > 0) {
+		/** @type {*} */
+		var vRec = vDS[0];
+		
+		fv_version = {code:vRec.code, pk:vRec.pk, book:vRec.book};
+		fv_version_display = vRec.code;
 	} else {
-		fv_version = {code:'RVR1960', pk:'1000025', book:'Reina Valera 1960'};
-		fv_version_display = 'NBG';
+		// Fallback, just in case!
+		if(globals.sb_APP_getServerLang()== "nl")
+		{
+			fv_version = {code:'NBG', pk:'1000002', book:'Nederlands Bijbel Genootschap 1951'};
+			fv_version_display = 'NBG';
+		} else {
+			fv_version = {code:'RVR1960', pk:'1000025', book:'Reina Valera 1960'};
+			fv_version_display = 'RVR1960';
+		}
 	}
 	
 	forms.sb_form.onShow(event);
